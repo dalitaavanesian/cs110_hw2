@@ -1,6 +1,6 @@
 const factorial = function(num) {
 
-  if(num <= 1) {
+  if(num === 0) {
     return 1;
   }
 
