@@ -19,11 +19,11 @@ const print = function(character, num) {
   return character + print(character, num - 1);
 }
 
-const triangle = function(line, currentFloor) {
+const triangleStars = function(line, currentFloor) {
   if(currentFloor == undefined) currentFloor = 0;
   if(line == 0) return;
 
-  return triangle(line - 1, currentFloor + 1) + console.log(print(' ', currentFloor) + print('*', 2 * line - 1));
+  return triangleStars(line - 1, currentFloor + 1) + console.log(print(' ', currentFloor) + print('*', 2 * line - 1));
 }
 
-triangle(5);
+triangleStars(5);
