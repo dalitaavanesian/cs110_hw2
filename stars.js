@@ -23,7 +23,7 @@ const triangleStars = function(line, currentFloor) {
   if(currentFloor == undefined) currentFloor = 0;
   if(line == 0) return;
 
-  return triangleStars(line - 1, currentFloor + 1) + console.log(print(' ', currentFloor) + print('*', 2 * line - 1));
+  triangleStars(line - 1, currentFloor + 1) + console.log(print(' ', currentFloor) + print('*', 2 * line - 1));
 }
 
 triangleStars(5);
